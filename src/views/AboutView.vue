@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <div class="beer">
+    <div class="beer animate__animated animate__fadeInLeft">
       <h2>Here it is, mate. Drink away</h2>
       <div class="title">Your perfect beer: <strong>{{this.$store.state.beer.data.name}}</strong></div>
       <div class="chars">
@@ -54,7 +54,7 @@
 </template>
 
 <script>
-
+import 'animate.css';
 export default {
   name: 'PersonalPage',
   computed:{
