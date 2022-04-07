@@ -54,18 +54,9 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
 
 export default {
   name: 'PersonalPage',
-  methods: {
-    ...mapActions([
-        'GET_USER_FROM_API'
-    ])
-  },
-  mounted() {
-    this.GET_USER_FROM_API()
-  },
   computed:{
     getAge: function (){
       let today = new Date();
@@ -84,11 +75,11 @@ export default {
 
 <style lang="scss" scoped>
   .about{
+    margin: 30px auto 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 960px;
-    margin: 0 auto;
     h1{
       margin: 0 auto 30px;
     }
@@ -118,6 +109,22 @@ export default {
     }
     .footer{
       margin-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  @media(max-width: 768px){
+    .about{
+      h1{
+        margin-bottom: 15px;
+      }
+      .card{
+        flex-direction: column;
+        img{
+          width: 200px;
+          margin-bottom: 15px;
+          margin-right: unset;
+        }
+      }
     }
   }
 </style>

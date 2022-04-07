@@ -24,8 +24,14 @@ export default {
 
 <style lang="scss" scoped>
   .home{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    img{
+      max-width: 720px;
+      width: 100%;
+      padding: 0 10px;
+    }
   }
 </style>

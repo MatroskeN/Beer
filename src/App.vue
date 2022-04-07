@@ -2,13 +2,27 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">Personal Page</router-link>
     </nav>
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import { mapActions } from 'vuex'
+export default {
+  methods: {
+    ...mapActions([
+        'GET_USER_FROM_API'
+    ])
+  },
+  mounted() {
+    this.GET_USER_FROM_API()
+  }
+}
+</script>
+
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,8 +32,7 @@
 }
 
 nav {
-  padding: 30px;
-
+  padding: 30px 0;
   a {
     font-weight: bold;
     color: #2c3e50;
