@@ -2,9 +2,11 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/beer.jpg">
     <h1>Choose your beer</h1>
-    <button class="animate__animated animate__swing" @click="GET_BEER_FROM_API">
-      Click
-    </button>
+    <router-link to="/about">
+      <button class="animate__animated animate__swing" @click="GET_BEER_FROM_API">
+        Click
+      </button>
+    </router-link>
     <p>And then look it up on your personal page</p>
   </div>
 </template>
