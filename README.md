@@ -21,4 +21,4 @@ npm run lint
 ```
 
 ### Deployment
-See [deployed app]([https://cli.vuejs.org/config/](https://beercules.onrender.com/#/)).
+See [deployed app]([https://beercules.onrender.com/#/]).
