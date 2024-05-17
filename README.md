@@ -20,5 +20,5 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Deployment
+See [deployed app]([https://cli.vuejs.org/config/](https://beercules.onrender.com/#/)).
