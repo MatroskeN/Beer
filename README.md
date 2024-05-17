@@ -21,4 +21,4 @@ npm run lint
 ```
 
 ### Deployment
-See [deployed app]([https://beercules.onrender.com/#/]).
+Check out the [deployed app](https://beercules.onrender.com/)
